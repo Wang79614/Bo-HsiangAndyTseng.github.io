@@ -1,0 +1,523 @@
+/*
+ * 
+ * Template Name 
+ * Description
+ * Version: 1.0;
+ * Copyright:C Wang & Bo-Hsiang Andy Tseng 2020;
+ * Author:C Wang
+ * Last Modified Date: 08 Sep 2020;
+ *
+ */
+/*-------------------------*/
+/* $Catalog 
+---------------------------*/
+/** 
+ * Catalog
+ * Font import
+ * Color
+ * Typography
+ * Icons
+ * Utility
+---------------------------*/
+/*
+ * Element
+   -Background
+   -Button
+
+ * Header
+ * Menu
+ * Left fixed sidebar
+   - Profile
+   - Contact 
+
+ * Right main body
+   - Bio
+   - WorkExperience
+   - Academics
+   - Honors
+   - Pulications
+
+ * Footer
+*/
+/*--------------------------*/
+
+
+/*--------------------------*/
+ /* $Font import*/
+ /*-------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Oswald:wght@300;400;500;600&display=swap');
+ 
+/*-------------------------*/
+/* $Color
+---------------------------*/
+.bg-color-primary{background-color: #384839;}
+.bg-color-secondary{background-color: #B1E6C2;}
+.bg-color-black{background-color: #333;}
+.bg-color-highlight{background-color: #BAFFD0;}
+.bg-color-white{background-color: #ffff;}
+
+/*text color*/
+.color-primary{color: #384839;}
+.color-secondary{color: #B1E6C2;}
+.color-black{color: #333;}
+.color-highlight{color: #BAFFD0;}
+.color-white{color: #ffff;}
+/*-------------------------*/
+/* $Typography
+---------------------------*/
+/*Global*/
+body,html{
+	font-family: 'Open Sans','Helvetica','roboto', arial, sans-serif; 
+
+}
+
+h2, h3, h4, h5, h6, p{
+	margin: 0;
+	color: #333;
+}
+
+h1{
+	font-size: 24px;
+	font-weight: 800;
+	font-family: 'Open Sans', Arial, sans-serif; 
+	margin-top: 24px;
+	margin-bottom: 24px;
+	color:#384839 ;
+}
+
+h2{
+	font-size:20px;
+	font-weight: 600;
+	font-family: 'Open Sans', Helvetica, Arial,sans-serif;
+	line-height: 36px;
+}
+h3{
+	font-size: 17px;
+	font-weight: 600;
+	font-family: 'Helvetica', Arial,sans-serif;
+	line-height: 36px;
+	margin-top: 20px;
+	color: #384839;
+}
+h4{
+	font-size: 17px;
+	font-weight: 600;
+	font-family: 'Open Sans', Helvetica, Arial,sans-serif;
+	line-height: 30px;
+}
+
+h5{
+	font-size: 14px;
+	font-weight: 400;
+	font-family: 'Open Sans', Helvetica, Arial,sans-serif;
+	line-height: 20px;
+	color:#384839; 
+}
+h6{
+	font-size: 10px;
+	font-weight: 400;
+	font-family: 'Open Sans', Helvetica, Arial,sans-serif;
+	line-height: 20px;
+	color:#fff; 
+}
+p{
+	font-size: 16px;
+	font-weight: 400;
+	font-family: 'Open Sans', Helvetica, Arial,sans-serif;
+  	line-height: 28px;
+	letter-spacing: 0;
+}
+
+/*list*/
+ul li{
+	list-style-type: none;
+	text-decoration: none;
+}
+
+/*link*/
+a {
+  background-color: transparent;
+  color: #384839;
+  text-decoration: none;
+}
+
+a:active,
+a:hover {
+  outline: 0;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #BAFFD0 ;
+  text-decoration: none;
+}
+a:focus {
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+
+/*-------------------------*/
+/* $Icon
+---------------------------*/
+.fa{
+	color: #384839 ;
+	position: relative !important;	
+	text-align: center!important;
+}
+.icon_style{
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif !important; 
+	font-size: 14px !important; 
+	font-weight: 600 !important;
+	line-height: 28px;
+	margin-right: 5px;
+	color: #384839;
+
+}
+
+/*
+<i class="fa fa-graduation-cap" aria-hidden="true"></i>
+<i class="fa fa-google" aria-hidden="true"></i>
+<i class="fa fa-github" aria-hidden="true"></i>
+<i class="fa fa-linkedin" aria-hidden="true"></i>
+<i class="fa fa-linkedin-square" aria-hidden="true"></i>
+<i class="fa fa-envelope" aria-hidden="true"></i>
+<i class="fa fa-arrow-down" aria-hidden="true"></i>
+*/
+
+.icon_google ,.icon_github ,.icon_linkedin{
+	margin-right: 6px;
+	display: inline-block;
+}
+
+/*-------------------------*/
+/* $Utility
+---------------------------*/
+.u-push-right{float: right !important;}
+.u-push-left{float: left !important;}
+.u-text-center{text-align: center !important;}
+
+/*-------------------------*/
+/* $Element
+---------------------------*/
+.topGreenline{
+	position: fixed;
+	top: 0;
+	height: 12px;
+	width: 100%;
+	background-color: #384839;
+	z-index: 1;
+}
+
+/* $Background */
+.bg{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background:linear-gradient(0deg, rgba(255,255,255,1) 2%, rgba(191,204,194,1) 31%, rgba(209,227,213,1) 75%, rgba(255,255,255,1) 100%);
+}
+.bg_left{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 25%;
+	height: 100%;
+	background-color: #fff;
+}
+@media (max-width: 767px) {
+	.bg_left{
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 300px;
+	background-color: #fff;	
+	}
+}
+
+/* btn Buttom*/
+
+.scrollDown-btn,.scrollUp-btn{
+	position: absolute;
+	right:0;
+	bottom: 5%;
+	width: 40px;
+	height: 40px;
+	border-radius:50%;
+	border: 1.4px solid #384839;
+	background-image: url(../Icon&Img/arrow.svg);
+	background-size: 20px;
+	background-repeat: no-repeat;
+	background-position: center;
+	animation: breath 2s infinite;
+
+}
+@keyframes breath {
+	0%{opacity: 0.5;}
+	50%{opacity: 1;}
+	100%{opacity: 0.5;}	
+}
+
+
+@media (max-width: 576px){
+	.btn-hidden{	
+	visibility: hidden;
+	}
+}
+
+.scrollUp-btn{
+	transform: rotate(180deg);
+}
+
+
+/*space*/
+.space{
+	position: relative;
+	width: 100%;
+	height: 100px;
+}
+/*-------------------------*/
+/* $Header
+---------------------------*/
+.header{
+	position: fixed;
+	top:0;
+	left: 0;
+	width: 100%;
+	z-index: 100;
+/*	background-color: #333;*/
+}
+.navbar{
+	height: 80px;
+
+}
+.logo{
+	margin-top: 20px;
+	width: 188px;
+	float: left;
+}
+@media (max-width: 425px) {
+.logo{
+	width: 160px;
+}
+}
+
+/*-------------------------*/
+/* $Menu
+---------------------------*/
+.menu{
+	position: fixed;
+	top: -16px;
+	float: right;
+	right: 5%;
+	text-align: right;
+	margin-right: 40px;
+
+	font-size: 30px;
+	font-weight: 800;
+	font-family: Helvetica, Arial, sans-serif; 
+	line-height: 28px;
+	z-index: 1;
+	opacity: 0.4;
+}
+.menu:hover{
+	opacity: 1;
+
+}
+@media (max-width: 992px) {
+	.menu{
+		visibility: hidden;
+	}
+}
+
+.navbar_nav{
+	float: right;
+}
+.menu-toggle{
+	display: block;
+	padding: 24px; 
+	padding-top: 26px;
+}
+.menu-toggle span{
+	display: block;
+	height: 2px;
+	width: 32px;
+	background-color: #384839;
+	border: 2px solid #384839;
+	border-radius: 20px;
+	margin-bottom: 6px;
+	transition: all 0.3s;
+
+}
+.menu-toggle:hover span:nth-child(1){
+	transform: translate(-20%);
+}
+.menu-toggle:hover span:nth-child(3){
+	transform: translate(20%);
+}
+
+.popup-menu{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #fff;
+	transition: all 0.3s;
+	opacity: 0;
+	visibility: hidden;
+}
+
+#popup-overlay:target{
+	opacity: 1;
+	visibility: visible;
+}
+.popup-menu_close{
+	padding:24px;
+	width: 80px;
+	height: 80px;
+	float: right;
+}
+.popup-menu_close:hover span{
+	width: 40px;
+	height: 2px;
+	background-color: #384839;
+	border: 2px solid #384839;
+	border-radius: 20px;
+	transition: all 0.3s;
+}
+.popup-menu_close span{
+	display: block;
+	width: 32px;
+	height: 2px;
+	background-color: #384839;
+	border: 2px solid #384839;
+	border-radius: 20px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+}
+.popup-menu_close span:nth-child(1){
+	transform: translate(-50%, -50%) rotate(45deg);
+}
+.popup-menu_close span:nth-child(2){
+	transform: translate(-50%, -50%) rotate(-45deg);
+}
+.popup-menu_item{
+	display: block;
+	text-align: center;
+	font-size: 28px;
+	font-weight: 800;
+	font-family: Helvetica, Arial, sans-serif; 
+	line-height: 42px;
+	transition: all 0.3s;
+}
+.popup-menu_item:hover{
+	color: #BAFFD0;
+}
+@media (min-width: 992px) {
+	.menu-toggle,.popup-menu{
+		visibility: hidden;
+	}
+
+}
+
+/*-------------------------*/
+/* $Left fixed sidebar
+---------------------------*/
+.row-left{
+	position: absolute;
+	top:160px;
+	left:3%;
+	margin-right: 50px;
+	padding-left: 4px;
+	padding-right: 4px;
+}
+@media (max-width: 767px) {
+	.row-left{
+		visibility: hidden;
+	}
+}
+
+.row-left_small{
+	position: absolute;
+	top:150px;
+}
+
+@media (min-width: 768px) {
+	.row-left_small, .zeroPage{
+		position: absolute;
+		visibility: hidden;
+	}
+}
+@media (max-width: 767px) {
+	.row-left_small{
+		visibility: visible;
+	}
+}
+
+/* $Profile */
+.portrait{
+	width: 50%;
+	margin-left: -10px;
+}
+.shortintro{
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+/* $Contact */
+.divider{
+	height: 1px;
+	width: 80%;
+	background-color: #384839 ;
+	margin-top: 16px;
+	margin-bottom: 16px;
+}
+/*-------------------------*/
+/* $Right main body
+---------------------------*/
+.rowright{
+	padding-left: 6%;
+	padding-right: 6%;
+}
+/* $Bio */
+/*.Bio{
+	
+}
+
+@media (max-width: 768px) {
+	.Bio{
+		position: relative;
+		top: 300px;
+	}
+}*/
+
+.logo_cam, .logo_tw{
+	display: inline-block;
+	position: relative;
+	margin-top: 50px;
+	margin-right:30px;
+}
+/* $WorkExperience */
+/* $Academics */
+/* $Honors */
+/* $Pulications */
+
+
+.br_height{
+	display: block; 
+    content: ""; 
+    margin-top: 16px; 
+}
+
+/*-------------------------*/
+/*  $Footer
+---------------------------*/
+.footer{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 6%;
+	opacity: 0.7;
+
+}
